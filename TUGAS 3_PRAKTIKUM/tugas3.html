@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tugas jQuery</title>
+
+  <!-- jQuery Lokal -->
+  <script type="text/javascript" src="jquery-4.0.0.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // Hello World
+      $("#btnHello").click(function() {
+        $("#hasil").text("Hello, World!");
+      });
+
+      // Hide Show
+      $("#hide").click(function() {
+        $("#paragraf").hide();
+      });
+
+      $("#show").click(function() {
+        $("#paragraf").show();
+      });
+
+      // Animasi
+      $("#animate").click(function() {
+        $("#kotak").animate({
+          height: 'toggle'
+        });
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <h2>Tugas jQuery</h2>
+
+  <!-- Hello World -->
+  <button id="btnHello">Tampilkan Hello World</button>
+  <p id="hasil"></p>
+
+  <hr>
+
+  <!-- Hide Show -->
+  <p id="paragraf">If you click on the "Hide" button, I will disappear.</p>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+
+  <hr>
+
+  <!-- Animasi -->
+  <p>Click the button to toggle the animation.</p>
+  <button id="animate">Start Animation</button>
+
+  <div id="kotak" style="background:#98bf21; height:100px; width:100px; position:absolute;">
+  </div>
+
+</body>
+
+</html>
